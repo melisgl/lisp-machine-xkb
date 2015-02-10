@@ -1,0 +1,22 @@
+partial alphanumeric_keys
+xkb_symbols "swap_paren_bracket" {
+    key <AE09> { symbols[Group1] = [ 9, bracketleft ] };
+    key <AE10> { symbols[Group1] = [ 0, bracketright ] };
+    key <AD11> { symbols[Group1] = [ parenleft ] };
+    key <AD12> { symbols[Group1] = [ parenright ] };
+};
+
+partial modifier_keys
+xkb_symbols "lisp_machine_modifiers" {
+    key <LCTL> { [ Super_L, Super_L ] };
+    key <RCTL> { [ Super_R, Super_R ] };
+    key <LALT> { [ Control_L, Control_L ] };
+    key <RALT> { [ Control_R, Control_R ] };
+    key <LWIN> { [ Alt_L, Meta_L ] };
+    key <MENU> { [ Alt_R, Meta_R ] };
+    # on the lenovo usb thinkpad keyboard PrtScr is where MENU usually is
+    key <PRSC> { [ Alt_R, Meta_R ] };
+    modifier_map Control { <RALT>, <LALT> };
+    modifier_map Mod1 { <LWIN>, <MENU> };
+    modifier_map Mod4 { <LCTL>, <RCTL> };
+};

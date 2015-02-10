@@ -1,0 +1,7 @@
+xkb_keymap {
+	xkb_keycodes  { include "evdev+aliases(qwerty)" };
+	xkb_types     { include "complete" };
+	xkb_compat    { include "complete" };
+	xkb_symbols   { include "pc+hu(102_qwerty_comma_nodead)+inet(evdev)+capslock(backspace)+lisp(lisp_machine_modifiers)" };
+	xkb_geometry  { include "pc(pc105)" };
+};
